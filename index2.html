@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Touch Detailing</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-logo" onclick="showPage('home')" style="cursor:pointer;display:flex;align-items:center;gap:10px;">
+      <div class="hero-logo-large" style="width:40px;height:40px;margin:0;animation:none;">
+        <img src="logo/769FE22D-DCE5-44F6-B8AA-DEC26E0FE05F.JPG" alt="Final Touch Detailing logo">
+      </div>
+      <span class="nav-brand brand-name">Final Touch Detailing</span>
+    </div>
+    <ul class="nav-links">
+      <li id="nav-home"     class="active" onclick="showPage('home')">Home</li>
+      <li id="nav-packages"             onclick="showPage('packages')">Packages</li>
+      <li id="nav-about"                onclick="showPage('about')">About</li>
+      <li id="nav-contact"              onclick="showPage('contact')">Contact</li>
+    </ul>
+  </nav>
+  <div id="page-home" class="page active">
+
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-logo-large">
+        <img src="logo/769FE22D-DCE5-44F6-B8AA-DEC26E0FE05F.JPG" alt="Final Touch Detailing logo">
+      </div>
+
+      <h1>Premium Car Detailing</h1>
+      <div class="hero-divider"></div>
+      <p>Precision Detail. Lasting Impression.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="showPage('packages')">View Packages</button>
+        <button class="btn-outline" onclick="showPage('contact')">Book Now</button>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature-item scroll-reveal delay-1" onclick="showPage('packages')" style="cursor:pointer;">
+        <i class="ti ti-car feature-icon"></i>
+        <h3>Interior Detail</h3>
+        <p>Deep vacuum, full surface clean, stain removal & light fragrance for a showroom feel inside.</p>
+      </div>
+      <div class="feature-item scroll-reveal delay-2" onclick="showPage('packages')" style="cursor:pointer;">
+        <i class="ti ti-wash feature-icon"></i>
+        <h3>Exterior Detail</h3>
+        <p>Hand wash, wheel & tire treatment, bug removal, glass cleaning, and tire shine finish.</p>
+      </div>
+      <div class="feature-item scroll-reveal delay-3" onclick="showPage('packages')" style="cursor:pointer;">
+        <i class="ti ti-sparkles feature-icon"></i>
+        <h3>Full Detail</h3>
+        <p>Complete interior and exterior package — the ultimate treatment for your vehicle.</p>
+      </div>
+    </div>
+
+    <div style="padding: 5rem 3rem; text-align: center;">
+      <p class="scroll-reveal" style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:1.5rem;">Why Choose Us</p>
+      <h2 class="scroll-reveal delay-1" style="font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:400;letter-spacing:0.04em;margin-bottom:1rem;">The Detail Is In The Details</h2>
+      <div class="section-line scroll-reveal delay-2"></div>
+      <p class="scroll-reveal delay-3" style="max-width:560px;margin:0 auto 3rem;font-size:15px;color:rgba(255,255,255,0.45);line-height:1.9;letter-spacing:0.02em;">
+        We treat every vehicle like our own. From the tightest crevices to the shine on your tires,
+        Final Touch Detailing delivers results you can see and feel.
+      </p>
+      <button class="btn-outline scroll-reveal delay-4" onclick="showPage('packages')" style="padding:16px 40px;">
+        Explore Packages →
+      </button>
+    </div>
+
+    <footer>
+      <span class="footer-brand">Final Touch Detailing</span>
+      <span class="footer-copy">© 2026 Final Touch Detailing. All rights reserved.</span>
+    </footer>
+  </div>
+  <div id="page-packages" class="page">
+
+    <div class="page-header">
+      <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:0.75rem;">Our Services</p>
+      <h2>Detailing Packages</h2>
+      <div class="section-line"></div>
+      <p class="subtitle">Premium hand-finished detailing for every vehicle</p>
+    </div>
+
+    <div class="packages-columns">
+
+      <div class="package-col scroll-reveal delay-1">
+        <div class="pkg-circle-image">
+          <img src="images/IMG_8961.JPG"" alt="Interior detail photo">
+        </div>
+        <h3 class="pkg-col-title">Interior</h3>
+        <ul class="pkg-checklist">
+          <li class="pkg-check-item">
+            <i class="ti ti-vacuum-cleaner pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Deep Vacuum</h4><p>Seats, carpets, mats & trunk</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-brush pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Deep Clean</h4><p>All surfaces, crevices & hard to reach areas</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-hand-sanitizer pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Wipe Down</h4><p>Dashboard, doors, center console & more</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-droplet pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Stain Removal</h4><p>Spots, marks & light stain treatment</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-window pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Windows</h4><p>Interior windows streak free</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-wind pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Light Fragrance</h4><p>Finishing touch for a fresh clean feel</p></div>
+          </li>
+        </ul>
+        <p class="pkg-price"><span class="pkg-price-label">From</span> $120-$150</p>
+      </div>
+
+      <div class="package-col scroll-reveal delay-2">
+        <div class="pkg-circle-image">
+          <img src="images/IMG_8966.JPG"" alt="Exterior detail photo">
+        </div>
+        <h3 class="pkg-col-title">Exterior</h3>
+        <ul class="pkg-checklist">
+          <li class="pkg-check-item">
+            <i class="ti ti-car pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Hand Wash</h4><p>Safe wash to remove dirt & grime</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-circle-dashed pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Wheels & Tires</h4><p>Deep clean wheels & tire shine</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-bug pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Bug & Tar Removal</h4><p>Removes bugs, tar & road grime</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-tool pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Dry & Detail</h4><p>Hand dry & detail all exterior areas</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-sparkles pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Glass Cleaning</h4><p>Streak free shine on all exterior glass</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-circle pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Tire Shine</h4><p>Finishing touch for that clean look</p></div>
+          </li>
+        </ul>
+        <p class="pkg-price"><span class="pkg-price-label">From</span> $60-$110</p>
+      </div>
+
+      <div class="package-col scroll-reveal delay-3">
+        <div class="pkg-circle-image">
+          <img src="images/IMG_8965.JPG"" alt="Full detail photo">
+        </div>
+        <h3 class="pkg-col-title">Full Detail</h3>
+        <ul class="pkg-checklist">
+          <li class="pkg-check-item">
+            <i class="ti ti-armchair pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Full Interior</h4><p>Deep vacuum, windows + wipe down clean, shampoo & interior detail</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-car pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Full Exterior</h4><p>Hand wash, glass + wheels + tires clean, bug removal & exterior detail</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-diamond pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Clay Bar</h4><p>Removes bonded contaminants</p></div>
+          </li>
+          <li class="pkg-check-item">
+            <i class="ti ti-shield-half pkg-check-icon"></i>
+            <div class="pkg-check-text"><h4>Ceramic Wax</h4><p>3–6 months of paint protection & gloss</p></div>
+          </li>
+        </ul>
+        <div style="flex:1;"></div>
+        <p class="pkg-price"><span class="pkg-price-label">From</span> $180-$250</p>
+      </div>
+
+    </div>
+
+    <div class="pkg-cta-shared" onclick="showPage('contact')">
+      <i class="ti ti-message-circle"></i>
+      For More Info
+    </div>
+
+    <footer>
+      <span class="footer-brand">Final Touch Detailing</span>
+      <span class="footer-copy">© 2026 Final Touch Detailing. All rights reserved.</span>
+    </footer>
+  </div>
+  <div id="page-about" class="page">
+
+    <div class="page-header" style="animation: fadeInDown 0.6s ease both;">
+      <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:0.75rem;">Our Story</p>
+      <h2>About Us</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-content">
+      <div class="about-text scroll-reveal-left">
+        <h3>Passion for perfection in every detail.</h3>
+        <p>Final Touch Detailing was born from a simple belief: every vehicle deserves to be treated with the same care its owner puts into choosing it. We're not just a car wash — we're craftspeople who take pride in every surface, every crevice, every shine.</p>
+        <p>From daily drivers to weekend classics, we bring the same level of precision and attention to every job. Our team is trained to handle all vehicle types with products that protect your paint, preserve your interior, and leave a lasting impression.</p>
+        <p>We come to you — because your time is just as valuable as your vehicle.</p>
+        <button class="btn-primary" onclick="showPage('contact')" style="margin-top:0.5rem;padding:14px 28px;font-size:10px">Book a Detail</button>
+      </div>
+      <div class="about-visual scroll-reveal-right">
+        <div class="about-logo-big">
+          <img src="logo/769FE22D-DCE5-44F6-B8AA-DEC26E0FE05F.JPG" alt="Final Touch Detailing logo">
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-item scroll-reveal delay-1">
+        <div class="stat-number">500+</div>
+        <p class="stat-label">Vehicles Detailed</p>
+      </div>
+      <div class="stat-item scroll-reveal delay-2">
+        <div class="stat-number">5★</div>
+        <p class="stat-label">Average Rating</p>
+      </div>
+      <div class="stat-item scroll-reveal delay-3">
+        <div class="stat-number">100%</div>
+        <p class="stat-label">Satisfaction Guaranteed</p>
+      </div>
+    </div>
+
+    <div class="values-section">
+      <h3 class="scroll-reveal">What We Stand For</h3>
+      <div class="values-grid">
+        <div class="value-card scroll-reveal delay-1">
+          <i class="ti ti-shield-check"></i>
+          <h4>Quality First</h4>
+          <p>We never cut corners. Every step of our process is done with the right products and the right technique.</p>
+        </div>
+        <div class="value-card scroll-reveal delay-2">
+          <i class="ti ti-clock"></i>
+          <h4>Reliability</h4>
+          <p>We show up on time and deliver exactly what we promise. Your schedule matters to us.</p>
+        </div>
+        <div class="value-card scroll-reveal delay-3">
+          <i class="ti ti-heart"></i>
+          <h4>Care & Respect</h4>
+          <p>Your vehicle is treated with the same respect you'd expect from a trusted professional.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <span class="footer-brand">Final Touch Detailing</span>
+      <span class="footer-copy">© 2026 Final Touch Detailing. All rights reserved.</span>
+    </footer>
+  </div>
+  <div id="page-contact" class="page">
+
+    <div class="page-header">
+      <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:0.75rem;">Get in Touch</p>
+      <h2>Contact Us</h2>
+      <div class="section-line"></div>
+      <p class="subtitle">Ready to book? Let's talk!</p>
+    </div>
+
+    <div class="contact-layout">
+
+      <div class="contact-info scroll-reveal-left">
+        <h3>Book Your Detail Today!</h3>
+        <p>Contact us today to schedule your detailing service, request a quote, or ask any questions. A member of our team will respond as soon as possible!</p>
+        <div class="contact-detail">
+          <i class="ti ti-phone"></i>
+          <span>(647)-224-2911</span>
+        </div>
+        <div class="contact-detail">
+          <a href="https://instagram.com/finaltouchgta" target="_blank" style="color:rgba(255,255,255,0.55);text-decoration:none;display:flex;align-items:center;gap:1rem;">
+            <i class="ti ti-brand-instagram"></i>
+            <span style="font-size:12px;letter-spacing:0.05em;">@finaltouchdetailing</span>
+          </a>
+        </div>
+        <div class="contact-detail">
+          <a href="https://tiktok.com/@finaltouchgta" target="_blank" style="color:rgba(255,255,255,0.55);text-decoration:none;display:flex;align-items:center;gap:1rem;">
+            <i class="ti ti-brand-tiktok"></i>
+            <span style="font-size:12px;letter-spacing:0.05em;">@finaltouchdetailing</span>
+          </a>
+        </div>
+        <div class="contact-detail">
+          <i class="ti ti-mail"></i>
+          <a href="mailto:REPLACE@EMAIL.COM" style="color:rgba(255,255,255,0.55);text-decoration:none;font-size:12px;letter-spacing:0.05em;">jacobgaleng2020@gmail.com</a>
+        </div>
+        <div class="contact-detail">
+          <i class="ti ti-map-pin"></i>
+          <span>Mobile Service — We'll come to you!</span>
+        </div>
+        <div class="contact-note">
+          <p class="note-label">Response Time</p>
+          <p>We typically respond within a few hours. For fastest response, message us directly on Instagram.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <span class="footer-brand">Final Touch Detailing</span>
+      <span class="footer-copy">© 2026 Final Touch Detailing. All rights reserved.</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
